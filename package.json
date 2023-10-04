@@ -1,7 +1,7 @@
 {
   "name": "week-15-muhammad-avicena",
   "version": "1.0.0",
-  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/A8ztcAuX)",
+  "description": "assignment of week15",
   "main": "dist/app.js",
   "scripts": {
     "start": "node dist/app.js",
@@ -33,6 +33,7 @@
     "@types/node": "^20.8.2",
     "@types/passport": "^1.0.13",
     "@types/supertest": "^2.0.14",
+    "@types/uuid": "^9.0.4",
     "chai": "^4.3.10",
     "concurrently": "^8.2.1",
     "mocha": "^10.2.0",
