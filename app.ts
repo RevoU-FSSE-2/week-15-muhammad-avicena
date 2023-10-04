@@ -1,16 +1,14 @@
 import "dotenv/config";
 import express, { Application } from "express";
 import routes from "./routes";
-import middleware from "./middleware";
-import databaseMiddleware from "./middleware/databaseMiddleware";
+import useMiddleware from "./middleware";
 import errorHandlerMiddleware from "./middleware/errorHandleMiddleware";
 
 const app: Application = express();
 const PORT: number = parseInt(<string>process.env.PORT, 10) || 8080;
 
 // Use middlewares
-middleware(app);
-app.use(databaseMiddleware);
+useMiddleware(app);
 
 // Use routes
 app.use(routes);
