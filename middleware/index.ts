@@ -5,6 +5,7 @@ import corsMiddleware from "./corsMiddleware";
 import morganMiddleware from "./morganMiddleware";
 import requestIdMiddleware from "./requestIdMiddleware";
 import databaseMiddleware from "./databaseMiddleware";
+import cspPolicyMiddleware from "./cspPolicyMiddleware";
 
 const applyMiddleware = (app: Application) => {
   app.use(requestIdMiddleware);
@@ -12,6 +13,7 @@ const applyMiddleware = (app: Application) => {
   bodyParserMiddleware(app);
   corsMiddleware(app);
   morganMiddleware(app);
+  cspPolicyMiddleware(app);
   app.use(databaseMiddleware);
 };
 

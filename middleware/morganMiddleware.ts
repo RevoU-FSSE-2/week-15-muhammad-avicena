@@ -1,8 +1,13 @@
-import { Application } from 'express';
-import morgan from 'morgan';
+import { Application } from "express";
+import fs from "fs";
+import morgan from "morgan";
 
 const morganMiddleware = (app: Application) => {
-    app.use(morgan('dev'));
+  const accessLogStream = fs.createWriteStream("request.log", {
+    flags: "a",
+  });
+  const logger = morgan("combined", { stream: accessLogStream });
+  app.use(logger);
 };
 
 export default morganMiddleware;
