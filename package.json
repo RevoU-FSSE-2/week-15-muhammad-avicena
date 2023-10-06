@@ -4,7 +4,7 @@
   "description": "assignment of week15",
   "main": "dist/app.js",
   "scripts": {
-    "start": "node dist/app.js",
+    "start": "node ./dist/app.js",
     "build": "tsc -p .",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon dist/app.js",
     "test": "mocha --check-leaks -r ts-node/register __test__/**/*.spec.ts"
