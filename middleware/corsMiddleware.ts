@@ -1,7 +1,11 @@
 import cors, { CorsOptions } from "cors";
 import { Application, Request } from "express";
 
-const origin = ["http://localhost:5173"];
+const origin = [
+  "http://localhost:5173",
+  "https://week15-api-avicena-dev.cyclic.cloud",
+  "https://week15.avicena.dev",
+];
 const partnerOrigin = ["http://localhost:5174"];
 
 const corsOptionsDelegate = (
