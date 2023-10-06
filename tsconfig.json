@@ -104,6 +104,7 @@
 
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+    "types": ["node", "./custom.d.ts", "@types/jest", "@types/body-parser", "@types/chai", "@types/express", "@types/mocha", "@types/node", "@types/supertest"],                                      /* Type declaration files to be included in compilation. */
   }
 }
