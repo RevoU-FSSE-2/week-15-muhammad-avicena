@@ -3,7 +3,6 @@ import { NextFunction, Request, Response } from "express";
 async function getDataXss(req: Request, res: Response, next: NextFunction) {
   const { name } = req.query;
   try {
-    const data = "ini data sensitive";
     res.send(`Hello ${name}`);
   } catch (error) {
     next(error);
