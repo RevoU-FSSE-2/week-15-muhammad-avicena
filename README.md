@@ -38,12 +38,18 @@ pnpm install | npm install | yarn install
 pnpm run dev | npm run dev | yarn run dev
 ```
 
-## TESTING CHECK 🌟
+## TESTING CHECK 🚧
 
 ![testing](./assets-github/unitTest.png)
 
+## SECURITY CHECK 🚨
+
+![security](./assets-github/security.png)
+
 ## DEPLOYMENT ⚙️
 
-The project has been successfully deployed using Vercel. You can access the production version of the website by following this link: [https://week15.avicena.dev](https://week15.avicena.dev).
+The project has been successfully deployed using Vercel. You can access the production version of the website by following this link: [https://week15.avicena.dev](https://week15.avicena.dev)
+
+Front end Github: [https://github.com/muhammad-avicena/week15-fe](https://github.com/muhammad-avicena/week15-fe)
 
 Feel free to explore the website and try out the different features. I appreciate any feedback and suggestions to further improve the user experience.
